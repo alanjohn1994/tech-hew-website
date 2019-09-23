@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <title>Tech Hew</title>
@@ -6,25 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <head>
-<script>
-var textWrapper = document.querySelector('.ml3');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml3 .letter',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    duration: 2250,
-    delay: (el, i) => 150 * (i+1)
-  }).add({
-    targets: '.ml3',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-</script>
 </head>
 
 <style>
@@ -45,28 +28,69 @@ background-image:url(https://images.unsplash.com/photo-1546365243-9af28be22b5f?i
 
    background-size:cover;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  opacity: 0.5;
+}
 
+li {
+  float: left;
+  
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+  background-color: white;
+ 
+}
+
+.active {
+  background-color: aqua;
+ 
+}
 </style>
 <body  class="blackpearl"    
    
 >
 
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
+
+
+
+</header>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a class="active" href="#about">About</a></li>
+</ul>
+<br>
+
 <div class="w3-content" style="max-width:1400px">
 
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
  
 <h1><b><font color="white">Tech Hew</font></b></h1>
-  <h1><font color="white">Home for the latest tech news</font> </h1>
-<h1 class="ml6">
+  <h1>
 </h1>
-<h1 class="ml3"><font color="white">Home for the latest tech news</font></h1>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-</header>
+<div class="w3-container w3-center w3-animate-opacity">
+  <h1><font color="white">Home for the latest tech news</font> </h1>
+<h1 class="ml6"></h1>
+ 
+</div>
 
 <!-- Grid -->
 <div class="w3-row">
@@ -76,7 +100,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   <!-- Blog entry -->
 
         <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+          
         </div>
       </div>
     </div>
@@ -99,7 +123,7 @@ and is wrapped around the whole page content, except for the footer in this exam
           <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
         </div>
         <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
         </div>
       </div>
     </div>
@@ -181,3 +205,4 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 </body>
 </html>
+
